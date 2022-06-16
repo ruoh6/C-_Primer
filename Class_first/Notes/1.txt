@@ -1,0 +1,26 @@
+1.1 编写一个简单的C++程序
+	C++程序包含一个或多个函数（Function），操作系统每次调用main来运行C++程序。
+	int main()
+	{
+		return 0;
+	}
+	这是一个简单的C++程序，包含返回类型（return type）、函数名（function name）、括号里为形参列表（parameter list）以及函数体（function body）。
+	int类型为一种内置类型（built-in type），函数体是以左花括号开始，右括号结束的语句块（block of statements）。注意，C++语句结束后记得加上;号。
+1.1.1 编译、运行程序
+	源程序命名：.cc、.cxx、.cpp、.cp及.C
+	命令行运行编译器：cc prog1.cc(linux)
+1.2 初识输入输出
+	在iostream库中包含两个基础类型istream和ostream类型对象，分别为输入流和输出流。
+	标准输入（standard input）对象：cin，为istream类型对象。
+	标准输出（standard output）对象：cout，为ostream类型对象。cerr用于输出警告和错误消息，为标准错误（standard error）。clog输出程序运行时的一般性信息。
+	一个使用IO的程序
+	#include <iostream>
+	int main()
+	{
+		std::cout << "Enter two number:"<< std::endl;
+		int v1 = 0, v2 = 0;
+		std::cin >> v1 >> v2;
+		std::cout << "The sum of " << v1 << " and "  << v2
+			  << " is " << v1 + v2 << std::endl;
+		return 0;
+	}	
